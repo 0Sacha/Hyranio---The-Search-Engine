@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="img/h-hyranio.ico" type="image/x-icon">
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyranio - The Search Engine</title>
+</head>
+
+<body >
+    <img class="title" src="img/Titre-hyranio-search.gif" style="height: 180px; display: block; margin-left: auto; margin-right: auto;"  alt="">
+
+    <br><br><br>
+    <script async src="https://cse.google.com/cse.js?cx=47d2242ce3c3640f3">
+    </script>
+    <div class="gcse-searchbox-only"></div>
+
+
+
+    <div class = "Widget" >
+
+        <div class="Affichage">
+            <a href="https://www.youtube.com" target="_blank"> 
+                <img src="img/icons8-youtube-48.png">   
+            </img>
+            </a>
+        </div>
+    
+        <div class="Affichage">
+            <a href="https://vscode.dev/" target="_blank"> 
+                <img src="img/icons8-visual-studio-code-2019-48.png" style="height: 48px; border-radius: 10px;">   
+            </img>
+            </a>
+        </div>
+      
+        <div class="Affichage">
+            <a href="https://www.twitch.tv" target="_blank"> 
+                <img src="img/icons8-twitch-48.png">   
+            </img>
+            </a>
+        </div>            
+    
+        <div class="Affichage">
+            <a href="https://github.com" target="_blank"> 
+                <img src="img/icons8-github-48.png">   
+            </img>
+            </a>
+        </div>    
+        
+        <div class="Affichage">
+            <a href="https://www.amazon.fr/ref=nav_logo" target="_blank"> 
+                <img src="img/icons8-amazon-shopping-app-48.png"></a>
+        </div>  
+    
+    </div>
+
+
+
+    
+    
+    <div class="slide-container" style="margin-left: auto; margin-top: 10px;">
+        <div class="custom-slider fade">
+            <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/130550"          style="border-radius: 15px;">  </iframe>
+            <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/544310"          style="border-radius: 15px;">  </iframe>                
+            <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/603380##039FFB8" style="border-radius: 15px;">  </iframe>
+        </div>
+        <div class="custom-slider fade">
+            <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/765400"          style="border-radius: 15px;">  </iframe>
+            <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/060880"          style="border-radius: 15px;">  </iframe>                
+            <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/601590"          style="border-radius: 15px;">  </iframe>
+        </div>
+        <div class="custom-slider fade">
+            <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/75056##039FFB8"  style="border-radius: 15px;">  </iframe>
+            <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/593500"          style="border-radius: 15px;">  </iframe>                
+            <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/75056##039FFB8"  style="border-radius: 15px;">  </iframe>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div class="slide-dot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>           
+
+  
+
+
+     
+    
+
+       
+
+        <script src="js/index.js"></script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("custom-slider");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+       -->
+</body>
+</div>
+</html>

@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="css/Carrousel-Méteo.css">
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Slider meteo</title>
+    </head>
+    <body>
+
+        <div class="slide-container">
+            <div class="custom-slider fade">
+                <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/130550"          style="padding: 5px; border-radius: 15px;">  </iframe>
+                <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/544310"          style="padding: 5px; border-radius: 15px;">  </iframe>                
+                <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/603380##039FFB8" style="padding: 5px; border-radius: 15px;">  </iframe>
+            </div>
+            <div class="custom-slider fade">
+                <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/765400"          style="padding: 5px; border-radius: 15px;">  </iframe>
+                <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/060880"          style="padding: 5px; border-radius: 15px;">  </iframe>                
+                <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/601590"          style="padding: 5px; border-radius: 15px;">  </iframe>
+            </div>
+            <div class="custom-slider fade">
+                <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/75056##039FFB8"  style="padding: 5px; border-radius: 15px;">  </iframe>
+                <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/593500"          style="padding: 5px; border-radius: 15px;">  </iframe>                
+                <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/75056##039FFB8"  style="padding: 5px; border-radius: 15px;">  </iframe>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div class="slide-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script src="js/carrousel-meteo.js"></script>
+    </body>
+</html>
