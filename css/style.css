@@ -69,7 +69,7 @@ body {
 
 
 
-.custom-slider { display: none; }
+
 .slide-container {
     max-width: 800px;
     position: relative;
@@ -182,9 +182,9 @@ body {
     
     }
 
+    body {
+        background-repeat: no-repeat;
+        background: rgb(131,58,180);
+      }
     
-.custom-slider {
-     display: none; 
-    
-    }
 }
