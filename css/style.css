@@ -17,11 +17,24 @@ body {
   justify-content: center;
   animation: SlideUp 1s;
   position: relative;
+  
+}
+
+.title {
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .Affichage {
-    padding: 10px 10px 10px 10px;
-    margin: 15px;
+    
+    padding: 3.5px 3.5px 3.5px 3.5px;
+    margin: 11.5px;
     margin-top: 100px;
     border-radius: 10px;
     border-top: 0.5px solid #f2f2f2;
@@ -102,6 +115,7 @@ body {
     height: 300px;
     object-fit: cover;
     object-position: center;
+    
 }
 .slide-dot{ text-align: center; }
 .dot {
@@ -130,8 +144,15 @@ body {
     display: block; 
     margin-left: 171px;
     margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
 }   
 
 
 
 
+@media (min-height:390) {
+    .custom-slider{
+        display: none;
+    }   
+}
