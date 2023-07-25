@@ -32,8 +32,8 @@ body {
 
 .Affichage {
     
-    padding: 10px 10px 10px 10px;
-    margin: 15px;
+    padding: 3.5px 3.5px 3.5px 3.5px;
+    margin: 11.5px;
     margin-top: 100px;
     border-radius: 10px;
     border-top: 0.5px solid #f2f2f2;
@@ -169,17 +169,7 @@ body {
     max-height: 100%;
 }
 
-.Affichage {
-    
-    padding: 3.5px 3.5px 3.5px 3.5px;
-    margin: 11.5px;
-    margin-top: 100px;
-    border-radius: 10px;
-    border-top: 0.5px solid #f2f2f2;
-    border-left: 0.5px solid #f2f2f2;
-    box-shadow: 5px 3px 12px #000000;
-    
-    }
+
 
 
 }
