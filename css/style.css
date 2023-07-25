@@ -179,4 +179,10 @@ body {
     box-shadow: 5px 3px 12px #000000;
     
     }
+
+    
+.custom-slider iframe{
+     display: none; 
+    
+    }
 }
