@@ -1,0 +1,46 @@
+.containeur {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bar-recherche {
+    width: 100%;
+    max-width: 700px;
+    background: rgb(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 2px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.bar-recherche input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 16px;
+    color: #cac7ff;
+}
+
+::placeholder {
+    color: snow;
+}
+
+.bar-recherche button img{
+    width: 40px;
+}
+
+.bar-recherche button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #828bb800;
+    cursor: pointer;
+}
