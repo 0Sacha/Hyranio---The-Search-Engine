@@ -8,9 +8,14 @@
 }
 
 .bar-recherche {
+
+
+    border-top: 0.5px solid #f2f2f2;
+    border-left: 0.5px solid #f2f2f2;
+    box-shadow: 4px 3px 12px #000000;
     width: 100%;
     max-width: 700px;
-    background: rgb(255, 255, 255, 0.2);
+    background: #ffffff33;
     display: flex;
     align-items: center;
     border-radius: 50px;

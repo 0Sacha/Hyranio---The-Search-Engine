@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/search bar.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/Carrousel-Méteo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
   
@@ -17,6 +20,11 @@
 </head>
 
 <body >
+
+   
+
+
+
     <img class="title" src="img/minecraft_title_hyranio-the-search-engine.png"   alt="">
 
     <br><br><br>
@@ -32,6 +40,8 @@
             </button>
         </form>
     </div>
+
+    
 
     <div class = "Widget" >
 
@@ -71,8 +81,8 @@
     </div>
 
 
+    <!-- carrousel -->
 
-    
     
     <div class="slide-container" style="margin-left: auto; margin-top: 10px;">
         <div class="custom-slider fade">
@@ -100,43 +110,74 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>           
 
+    
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+                <header class="sidebar-header">
+                    <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                    <img src="img/logo.png" alt="" class="sidebar-logo">
+                </header>
+
+                <nav class="sidebar-menu">
+                    <button type="button">
+                        <i class='bx bx-home'></i>
+                        <a href="" target="_blank"><span>Home</span></a>
+                    </button>
+                    <button type="button">
+                        <i class='bx bx-user'></i>
+                        <a href="" target="_blank"><span>Account</span></a>
+                    </button>
+                    <button type="button" class="has-border">
+                        <i class='bx bx-cog' ></i>
+                        <a href="" target="_blank"><span>Paramètres</span></a>
+                    </button>
+                    <button type="button">
+                        <i class='bx bx-shape-circle'></i>
+                        <a href="" target="_blank"><span>blockchain</span></a>
+                    </button>
+                    <button type="button">
+                        <i class='bx bx-data' ></i>
+                        <a href="" target="_blank"><span>Databases</span></a>
+                    </button>
+                    <button type="button">
+                        <i class='bx bxl-spotify' ></i>
+                        <a href="https://open.spotify.com/" target="_blank"><span>Spotify</span></a>
+                    </button>
+                    <button type="button" class="has-border">
+                        <i class='bx bx-cloud'></i>
+                        <a href="https://meteofrance.com/" target="_blank"><span>Météo France</span></a>
+                    </button>
+                    <button type="button">
+                        <i class='bx bx-detail'></i>
+                        <a href=""><span>A propos de nous</span></a>
+                    </button> 
+                    <button type="button">
+                        <i class='bx bx-book'></i>
+                        <a href="https://sachalaville.fr/" target="_blank"><span>Nos Services</span></a>
+                    </button> 
+                    <button type="button">
+                        <i class='bx bxl-discord-alt' ></i>
+                        <a href="https://discord.gg/FJ7Psmx2kJ" target="_blank"><span>Notre Discord</span></a>
+                    </button>
+                </nav>
+
+        </div>
+    </nav>
+
   
 
 
      
-    
+        <!-- link script js -->
 
        
-
+        <script src="js/sidebar.js"></script>
         <script src="js/index.js"></script>
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
+        <script src="js/carrousel-meteo.js"></script>
 
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
 
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("custom-slider");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
-            }
-        </script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
        -->
 </body>
