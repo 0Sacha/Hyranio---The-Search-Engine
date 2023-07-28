@@ -23,7 +23,7 @@ button{
     left: 0;
     width: 75px;
     height:100%;
-    background: #3948ab7a;
+    background: #44345c34;
     transition: all 0.4s;
     box-shadow: 4px 0px 12px #000000;
     backdrop-filter: blur(4px);
@@ -107,7 +107,7 @@ body.open .sidebar-logo{
 
 .sidebar-menu > button.has-border{
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 2.5px solid rgba(255, 255, 255, 0.12);
     margin-bottom: 1rem;
 }
 

@@ -1,0 +1,16 @@
+:root {
+    --color-bg: #1A1423;
+    --color-fg: ##833CD4;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      --color-bg: ##833CD4;
+      --color-fg: #1A1423;
+    }
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+  }

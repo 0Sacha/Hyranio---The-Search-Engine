@@ -8,22 +8,20 @@
 }
 
 .bar-recherche {
+    border-bottom: 1px solid #ff9900;
+}
 
-
-    border-top: 0.5px solid #f2f2f2;
-    border-left: 0.5px solid #f2f2f2;
-    box-shadow: 4px 3px 12px #000000;
+.bar-recherche {
     width: 100%;
     max-width: 700px;
-    background: #ffffff33;
     display: flex;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 9px;
     padding: 2px 20px;
-    backdrop-filter: blur(4px) saturate(180%);
 }
 
 .bar-recherche input {
+    
     background: transparent;
     flex: 1;
     border: 0;
@@ -42,10 +40,10 @@
 }
 
 .bar-recherche button {
+   
     border: 0;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background: #828bb800;
     cursor: pointer;
 }

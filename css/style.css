@@ -4,11 +4,23 @@
     font-family : Poppins;
 }
 
-body {
-    background-repeat: no-repeat;
-    background: rgb(131, 60, 212);
-
+:root {
+    --color-bg: #1A1423;
+    --color-fg: #833CD4;
   }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      --color-bg: #833CD4;
+      --color-fg: #1A1423;
+    }
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+  }
+
 
 .Widget {
   display: flex;
@@ -43,8 +55,10 @@ body {
     }
 
 
+
+
 .Affichage:hover {
-    padding: 10px 10px 10px 10px;
+    padding: 3.5px 3.5px 3.5px 3.5px;
     border-radius: 10px;
     border-top: 1px solid #000000;
     border-left: 1px solid #000000;
